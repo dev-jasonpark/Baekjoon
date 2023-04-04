@@ -1,0 +1,14 @@
+_alp=input().upper()
+_unique=list(set(_alp))
+
+list1=[]
+for i in _unique:
+    s=_alp.count(i)
+    list1.append(s)
+
+if list1.count(max(list1))>1:
+    print('?')
+
+else:
+    max_index=list1.index(max(list1))
+    print(_alp[max_index])
