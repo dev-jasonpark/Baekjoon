@@ -1,0 +1,12 @@
+_hour, _min=map(int, input().split())
+
+if _hour==0:
+    if _min>=45:
+        print(_hour, _min-45)
+    else:
+        print(23, 60+(_min-45))
+else:
+    if _min>=45:
+        print(_hour, _min-45)
+    else:
+        print(_hour-1, 60+(_min-45))
