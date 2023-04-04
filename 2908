@@ -1,0 +1,18 @@
+list1,list2=[],[]
+A,B=map(int,input().split())
+
+list1=list(map(int,str(A)))
+list2=list(map(int,str(B)))
+
+list1[0],list1[1],list1[2]=list1[2],list1[1],list1[0]
+list2[0],list2[1],list2[2]=list2[2],list2[1],list2[0]
+
+a=''.join(map(str,list1))
+b=''.join(map(str,list2))
+
+
+if int(a)>int(b):
+    print(int(a))
+
+else:
+    print(int(b))
