@@ -1,0 +1,4 @@
+list1=[]
+s=input()
+list1=s.split()
+print(len(list1))
