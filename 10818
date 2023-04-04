@@ -1,0 +1,6 @@
+_list=[]
+N=int(input())
+_list=list(map(int,input().split()))
+
+_list.sort()
+print(_list[0], _list[N-1])
