@@ -1,0 +1,10 @@
+_last,cnt=1,1
+N=int(input())
+while True:
+    if _last<N:
+        _last+=6*cnt
+        cnt+=1
+
+    else:
+        print(cnt)
+        break
