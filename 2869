@@ -1,0 +1,19 @@
+a,b,v=map(int,input().split())
+k=(v-b)/(a-b)
+print(int(k) if k==int(k) else int(k)+1)
+
+#############################################
+############Time Over version################
+_day,_climb=0,0
+_up,_down,_height=map(int,input().split())
+
+while True:
+    if _height>_climb:
+        _climb+=_up
+        if _height>_climb:
+            _climb-=_down
+            _day+=1
+        if _height<=_climb:
+            _day+=1
+            print(_day)
+            break
