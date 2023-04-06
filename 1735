@@ -1,0 +1,11 @@
+from fractions import Fraction
+list1=[]
+x,y,fr=0,0,0
+for i in range(2):
+    a,b=map(int,input().split())
+    list1.append([a,b])
+
+x=list1[0][1]*list1[1][0]+list1[0][0]*list1[1][1]
+y=list1[0][1]*list1[1][1]
+fr=Fraction(x,y)
+print(fr.numerator,fr.denominator)
