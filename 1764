@@ -1,0 +1,15 @@
+N,M=map(int,input().split())
+list1,list2,list3=[],[],[]
+
+for i in range(N):
+    list1.append(input())
+    
+for i in range(M):
+    list2.append(input())
+
+list3=list(set(list1)&set(list2))
+list3.sort()
+print(len(list3))
+
+for x in list3:
+    print(x)
