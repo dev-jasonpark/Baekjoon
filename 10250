@@ -1,0 +1,15 @@
+import sys
+
+T=int(input())
+rHei,rNum=0,0
+roomlist=[]
+for i in range(T):
+    H,W,N=map(int,sys.stdin.readline().split())
+    rHei=N%H*100
+    rNum=N//H+1
+    if rHei==0:
+        rHei=H*100
+        rNum=N//H
+    roomlist.append(rHei+rNum)
+for i in roomlist:
+    print(i)
