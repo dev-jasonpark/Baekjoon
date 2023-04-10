@@ -1,0 +1,11 @@
+import sys
+n=int(input())
+temp=dict()
+for i in range(n):
+    name,entry=sys.stdin.readline().split()
+    if entry=='enter':
+        temp[name]=entry
+    else:
+        del temp[name]
+for i in sorted(temp.keys(),reverse=1):
+    print(i)
