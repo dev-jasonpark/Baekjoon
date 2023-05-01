@@ -1,0 +1,11 @@
+import sys
+k=int(sys.stdin.readline())
+hap=[]
+for i in range(k):
+    a=int(sys.stdin.readline())
+    if a==0:
+        hap.pop()
+    else:
+        hap.append(a)
+
+print(sum(hap))
