@@ -1,0 +1,6 @@
+import sys
+aver=0
+n=int(sys.stdin.readline())
+jumsu=list(map(int,sys.stdin.readline().split()))
+aver=sum(jumsu)/max(jumsu)*100/n
+print(float(aver))
