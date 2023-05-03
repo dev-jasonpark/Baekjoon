@@ -1,0 +1,5 @@
+import sys
+alp=sys.stdin.readline().strip()
+cnt=len(alp)
+cnt1=alp.count('c=')+alp.count('c-')+alp.count('dz=')+alp.count('d-')+alp.count('lj')+alp.count('nj')+alp.count('s=')+alp.count('z=')
+print(cnt-cnt1)
