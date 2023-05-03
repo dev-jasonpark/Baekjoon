@@ -1,0 +1,10 @@
+import sys
+n=int(sys.stdin.readline())
+cor=[]
+for i in range(n):
+    jum=list(map(int,sys.stdin.readline().split()))
+    cor.append(jum)
+cor.sort()
+
+for x,y in cor:
+    print(x,y)
